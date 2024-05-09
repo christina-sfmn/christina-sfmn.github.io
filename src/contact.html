@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Kontakt</title>
+    <link href="./css/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HEADERBAR + NAVIGATION -->
+    <header class="bg-matteblack h-24">
+      <nav
+        class="navigation relative flex md:justify-end justify-center sm:text-base text-sm gap-5 px-10 py-8 text-white z-20">
+        <a href="index.html">Home</a>
+        <a href="about.html">Über mich</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" class="current">Kontakt</a>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container mx-auto pb-20">
+      <h1>Kontakt</h1>
+
+      <!-- CONTACT FORM -->
+      <form
+        class="bg-lightestblue p-5 rounded-md shadow-md xl:w-1/2 md:w-2/3 w-full"
+        action="https://api.web3forms.com/submit"
+        method="POST">
+        <input
+          type="hidden"
+          name="access_key"
+          value="4eb91fdb-52a6-424f-a0de-0f5ff5950711" />
+
+        <div class="form-field">
+          <label>Vorname</label>
+          <input type="text" name="given-name" id="given-name" required />
+        </div>
+        <div class="form-field">
+          <label>Nachname</label>
+          <input type="text" name="surname" id="surname" required />
+        </div>
+        <div class="form-field">
+          <label>E-Mail</label>
+          <input type="text" name="email" id="email" required />
+        </div>
+        <div class="form-field">
+          <label>Nachricht</label>
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            rows="4"
+            cols="50"
+            required></textarea>
+        </div>
+        <button
+          class="bg-darkblue hover:bg-black transition-all cursor-pointer px-4 py-2 rounded-full shadow-md text-white font-bold uppercase tracking-wider mt-4"
+          type="submit">
+          Senden
+        </button>
+      </form>
+
+      <!-- Required for hCaptcha -->
+      <script src="https://web3forms.com/client/script.js" async defer></script>
+
+      <!-- SOCIAL LINKS -->
+      <div class="mt-10 flex items-center">
+        <span class="sm:text-xl text-lg mr-3">Zu meinem LinkedIn-Profil:</span>
+        <a
+          href="https://www.linkedin.com/in/christina-s-883aa01a6"
+          target="_blank"
+          class="inline-block"
+          ><img
+            src="../assets/icons/linkedin-round-svgrepo-com.svg"
+            title="LinkedIn"
+            alt="LinkedIn Icon"
+            class="w-10 h-10 hover:grayscale hover:contrast-200 hover:scale-125 hover:transition-all"
+            alt="Icon LinkedIn"
+        /></a>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="relative px-7 py-5 shadow-inner z-10 bg-matteblack">
+      <nav
+        class="flex md:justify-start justify-center gap-5 text-xs text-white">
+        <a href="imprint.html" class="hover:font-semibold hover:transition-all"
+          >Impressum</a
+        >
+        <a
+          href="privacy-policy.html"
+          class="hover:font-semibold hover:transition-all"
+          >Datenschutz</a
+        >
+      </nav>
+    </footer>
+  </body>
+</html>

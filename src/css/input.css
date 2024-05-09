@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----- IMPORT FONT ----- */
+@layer base {
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway-Light.woff2") format("woff2"),
+      url("../assets/fonts/Raleway-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway-LightItalic.woff2") format("woff2"),
+      url("../assets/fonts/Raleway-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway-Regular.woff2") format("woff2"),
+      url("../assets/fonts/Raleway-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway-Italic.woff2") format("woff2"),
+      url("../assets/fonts/Raleway-Italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway-SemiBold.woff2") format("woff2"),
+      url("../assets/fonts/Raleway-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway-SemiBoldItalic.woff2") format("woff2"),
+      url("../assets/fonts/Raleway-SemiBoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway-Bold.woff2") format("woff2"),
+      url("../assets/fonts/Raleway-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Raleway";
+    src: url("../assets/fonts/Raleway-BoldItalic.woff2") format("woff2"),
+      url("../assets/fonts/Raleway-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+  }
+}
+
+/* ----- GENERAL STYLES ----- */
+
+body {
+  @apply font-Raleway tracking-wide overflow-x-hidden;
+}
+
+h1 {
+  @apply sm:text-6xl text-5xl mt-20 mb-10;
+}
+
+h2 {
+  @apply sm:text-4xl text-3xl text-darkestblue mt-10 mb-2;
+}
+
+h3 {
+  @apply sm:text-2xl text-xl text-darkestblue mt-5;
+}
+
+p,
+ul,
+ol {
+  @apply sm:text-base text-sm;
+}
+
+.link {
+  @apply underline underline-offset-2 hover:bg-darkblue hover:text-white;
+}
+
+/* ----- HOME SCREEN ----- */
+
+/* Bubbles Animation */
+
+.bubbles svg {
+  @apply fixed top-0 left-0 w-full h-screen;
+}
+
+.out-top {
+  @apply animate-rotateouttop origin-[15px_25px];
+}
+
+.in-top {
+  @apply animate-rotateintop origin-[15px_25px];
+}
+
+.out-bottom {
+  @apply animate-rotateoutbottom origin-[85px_90px];
+}
+
+.in-bottom {
+  @apply animate-rotateinbottom origin-[85px_90px];
+}
+
+/* Home Boxes */
+
+.homebox {
+  @apply bg-white hover:bg-gray-200 shadow-md rounded-md w-96 h-32 text-matteblack text-xl font-semibold transform hover:rotate-y-30 hover:transition-all;
+}
+
+.homebox a {
+  @apply w-full h-full flex justify-center items-center;
+}
+
+/* ----- NAVIGATION ----- */
+
+.navigation {
+  @apply uppercase;
+}
+
+.navigation a {
+  @apply mt-1 hover:border-b-[1px] hover:transition-all;
+}
+
+.current {
+  @apply font-bold;
+}
+
+/* ----- TIMELINE ----- */
+
+.timeline .cv-item {
+  @apply relative list-none w-1 bg-darkblue mx-auto pt-2;
+}
+
+.timeline .cv-item::after {
+  @apply bg-darkblue content-[''] w-4 h-4 rounded-full absolute left-1/2 -translate-x-1/2 bottom-0;
+}
+
+.timeline .cv-item div {
+  @apply relative md:w-80 w-fit min-w-52 p-4 rounded-md shadow-sm bottom-0 bg-lightestblue invisible opacity-0 transition-all delay-300;
+}
+
+.timeline .cv-item:nth-child(odd) div {
+  @apply md:left-9 left-1 transform translate-x-20;
+}
+
+.timeline .cv-item:nth-child(even) div {
+  @apply md:-left-[22rem] -left-52 transform -translate-x-20;
+}
+
+.timeline .cv-item.show div {
+  @apply transform translate-x-0 visible opacity-100;
+}
+
+.timeline .cv-item ul li {
+  @apply relative list-disc left-6 pr-6;
+}
+
+time {
+  @apply text-sm font-semibold text-darkestblue block mb-2 pb-2 border-b-[1px] border-b-white;
+}
+
+/* ----- SKILLS ----- */
+
+.skillitem {
+  @apply sm:text-2xl text-xl text-white text-center pt-2 pb-5 border-b-[1px] w-2/3 mx-auto;
+}
+
+/* ----- CODING LANGUAGES ----- */
+
+.progress-ring__circle {
+  @apply transform -rotate-90 origin-center;
+}
+
+@keyframes fill {
+  from {
+    stroke-dasharray: 0 400;
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dasharray: 400 400;
+    stroke-dashoffset: var(--end-dash);
+  }
+}
+
+.fill-animation {
+  animation: fill 2.5s ease forwards;
+}
+
+/* ----- TOOLS ----- */
+
+.tool {
+  @apply flex flex-col justify-center items-center bg-white hover:bg-darkblue shadow-md rounded-md text-matteblack hover:text-white text-xl font-semibold p-5 hover:transition-all;
+}
+
+.tool:hover img {
+  @apply invert transition-all;
+}
+
+/* ----- LANGUAGES ----- */
+
+.lang {
+  @apply mt-6 sm:text-lg text-base;
+}
+
+.lang-container {
+  @apply w-full bg-gray-200;
+}
+
+.lang-bar {
+  @apply text-right p-4 w-0 transition-[width] duration-[2.5s];
+}
+
+/* ----- PORTFOLIO ----- */
+
+.projects h2 {
+  @apply sm:text-xl text-lg text-center font-bold mt-2 leading-6;
+}
+
+.projects p {
+  @apply text-sm text-center italic;
+}
+
+.projectbox {
+  @apply relative aspect-[3/2] hover:cursor-pointer;
+}
+
+.projectbox:hover .project-text {
+  @apply lg:opacity-100;
+}
+
+.projectbox:hover .project-image::after {
+  @apply lg:opacity-85;
+}
+
+.project-image img {
+  @apply object-cover object-center rounded-md shadow-sm;
+}
+
+.project-image::after {
+  @apply absolute content-[''] top-0 left-0 w-full h-full bg-darkestblue opacity-0 transition-all rounded-md z-10;
+}
+
+.project-text {
+  @apply lg:absolute relative lg:inset-0 flex flex-col justify-center items-center lg:opacity-0 opacity-100 my-2;
+}
+
+.project-text h2 {
+  @apply lg:text-white font-semibold mb-1 z-20;
+}
+
+.project-text p {
+  @apply lg:text-white z-20;
+}
+
+/* ----- MODAL ----- */
+
+.modal-images img {
+  @apply border-[1px] border-gray-200 shadow-lg w-full h-auto my-5;
+}
+
+.modal-socialmedia a {
+  @apply w-10 h-10 mt-2 hover:grayscale hover:contrast-200 hover:scale-125 hover:transition-all;
+}
+
+/* ----- CONTACT ----- */
+
+.form-field {
+  @apply font-semibold mt-3;
+}
+
+.form-field label {
+  @apply block mb-1;
+}
+
+.form-field input,
+.form-field textarea {
+  @apply w-full p-3;
+}
