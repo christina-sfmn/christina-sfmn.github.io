@@ -64,6 +64,7 @@ let projects = {
     date: "2024",
     info: "Technische Umsetzung einer Landingpage als Übungsprojekt im Rahmen des Zertifikatslehrganges 'Web Development' an der Coding School Wörthersee.",
     technologies: "VS Code, HTML, SCSS (Version 1), Tailwind CSS (Version 2)",
+    link: "https://github.com/christina-sfmn/Mountains",
     images: [
       "../assets/img/portfolio/mountains-1.png",
       "../assets/img/portfolio/mountains-2.png",
@@ -88,6 +89,7 @@ let projects = {
     date: "2024",
     info: "Technische Umsetzung einer Shopping-Cart-Page als Übungsprojekt im Rahmen des Zertifikatslehrganges 'Web Development' an der Coding School Wörthersee.",
     technologies: "VS Code, HTML, Tailwind CSS, JavaScript",
+    link: "https://github.com/christina-sfmn/ShoppingCart",
     images: [
       "../assets/img/portfolio/ShoppingCart_Mockup.jpg",
       "../assets/img/portfolio/ShoppingCartMobile_Mockup.jpg",
@@ -98,6 +100,7 @@ let projects = {
     date: "2024",
     info: "Technische Umsetzung einer Todo-Liste als Übungsprojekt im Rahmen des Zertifikatslehrganges 'Web Development' an der Coding School Wörthersee.",
     technologies: "VS Code, HTML, CSS, JavaScript",
+    link: "https://github.com/christina-sfmn/TodoApp",
     images: [
       "../assets/img/portfolio/Todo_Mockup-1.jpg",
       "../assets/img/portfolio/Todo_Mockup-2.jpg",
@@ -132,6 +135,7 @@ let projects = {
     date: "2024",
     info: "Technische Umsetzung einer Wetter-App als Übungsprojekt im Rahmen des Zertifikatslehrganges 'Web Development' an der Coding School Wörthersee. Als Datenquelle wurde eine frei zugängliche API verwendet.",
     technologies: "VS Code, HTML, Tailwind CSS, JavaScript",
+    link: "https://github.com/christina-sfmn/WeatherApp",
     images: [
       "../assets/img/portfolio/WetterApp_Mockup.jpg",
       "../assets/img/portfolio/WetterAppMobile_Mockup.jpg",
