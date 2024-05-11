@@ -134,7 +134,7 @@ ol {
 /* ----- NAVIGATION ----- */
 
 .navigation {
-  @apply uppercase;
+  @apply uppercase relative flex md:justify-end justify-center sm:text-base text-sm sm:gap-5 gap-3 sm:px-10 px-5 sm:py-8 py-9 text-white z-20;
 }
 
 .navigation a {
@@ -156,7 +156,7 @@ ol {
 }
 
 .timeline .cv-item div {
-  @apply relative md:w-80 w-fit min-w-52 p-4 rounded-md shadow-sm bottom-0 bg-lightestblue invisible opacity-0 transition-all delay-300;
+  @apply relative md:w-80 w-fit sm:min-w-52 min-w-44 p-4 rounded-md shadow-sm bottom-0 bg-lightestblue invisible opacity-0 transition-all delay-300;
 }
 
 .timeline .cv-item:nth-child(odd) div {
@@ -164,7 +164,7 @@ ol {
 }
 
 .timeline .cv-item:nth-child(even) div {
-  @apply md:-left-[22rem] -left-52 transform -translate-x-20;
+  @apply md:-left-[22rem] sm:-left-52 -left-44 transform -translate-x-20;
 }
 
 .timeline .cv-item.show div {
