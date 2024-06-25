@@ -90,9 +90,9 @@ let projects = {
     technologies: "HTML, Tailwind CSS, TypeScript",
     link: "https://github.com/christina-sfmn/QuizApp",
     images: [
-      "../assets/img/portfolio/QuizApp_Mockup-1.png",
-      "../assets/img/portfolio/QuizApp_Mockup-2.png",
-      "../assets/img/portfolio/QuizApp_Mockup-3.png",
+      "../assets/img/portfolio/QuizApp_Mockup-1.jpg",
+      "../assets/img/portfolio/QuizApp_Mockup-2.jpg",
+      "../assets/img/portfolio/QuizApp_Mockup-3.jpg",
       "../assets/img/portfolio/QuizApp_Mockup-4.jpg",
       "../assets/img/portfolio/QuizApp_Mockup-5.jpg",
     ],
