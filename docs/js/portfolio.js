@@ -72,15 +72,16 @@ let projects = {
       "../assets/img/portfolio/mountains-4.jpg",
     ],
   },
-  moviestars: {
-    name: "Moviestars",
+  movieapp: {
+    name: "Movie App",
     date: "2024",
-    info: "Technische Umsetzung einer React-App als Übungsprojekt im Rahmen des Zertifikatslehrganges 'Web Development' an der Coding School Wörthersee.",
+    info: "Technische Umsetzung einer Movie-App mit React als Übungsprojekt. Die App bietet die Möglichkeit nach Filmen und Serien zu suchen, diese als Favoriten zu speichern und zu bewerten. Deployment der Web-App via Netlify.",
     technologies: "React, Tailwind CSS, TypeScript",
-    link: "https://github.com/christina-sfmn/Moviestars",
+    link: "https://christinas-movieapp.netlify.app/", 
     images: [
-      "../assets/img/portfolio/Moviestars_Mockup-1.jpg",
-      "../assets/img/portfolio/Moviestars_Mockup-2.jpg",
+      "../assets/img/portfolio/MovieApp_Mockup-1.jpg",
+      "../assets/img/portfolio/MovieApp_Mockup-2.jpg",
+      "../assets/img/portfolio/MovieApp_Mockup-3.jpg",
     ],
   },
   quizapp: {
