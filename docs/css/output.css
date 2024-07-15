@@ -783,6 +783,14 @@ video {
   margin-top: 1.25rem;
 }
 
+.-mt-10 {
+  margin-top: -2.5rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1882,10 +1890,6 @@ time {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:justify-start {
     justify-content: flex-start;
   }
@@ -1909,14 +1913,6 @@ time {
 @media (min-width: 1440px) {
   .xl\:w-1\/2 {
     width: 50%;
-  }
-
-  .xl\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-5 {
