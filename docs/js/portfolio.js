@@ -15,7 +15,7 @@ let projects = {
   bucher: {
     name: "Bucher & Partner",
     date: "2023",
-    info: "Grafische Neugestaltung und technische Umsetzung der Website für bucher | partner Rechtsanwälte.",
+    info: "Design und technische Umsetzung der Website für bucher | partner Rechtsanwälte.",
     technologies: "Adobe CC, Contao CMS",
     link: "https://www.bucher-partner.com/de/home",
     images: [
@@ -24,10 +24,25 @@ let projects = {
       "../assets/img/portfolio/bucher-3.jpg",
     ],
   },
+   deskbooking: {
+    name: "Deskbooking",
+    date: "2024",
+    info: "Design und technische Umsetzung einer Buchungs-App als Abschlussprojekt im Rahmen des Zertifikatslehrganges 'Web Development' an der Coding School Wörthersee. Die App bietet die Möglichkeit Arbeitsplätze zu reservieren oder anzufragen, diese als Favoriten zu speichern, Feedback zu geben und die Buchungen zu verwalten. Deployment der Web-App via Netlify.",
+    technologies: "Balsamiq, Figma, React, Tailwind CSS, TypeScript",
+    link: "https://cs-deskbooking.netlify.app/", 
+    images: [
+      "../assets/img/portfolio/Deskbooking_Mockup-1.jpg",
+      "../assets/img/portfolio/Deskbooking_Mockup-2.jpg",
+      "../assets/img/portfolio/Deskbooking_Mockup-3.jpg",
+      "../assets/img/portfolio/Deskbooking_Mockup-4.jpg",
+      "../assets/img/portfolio/Deskbooking_Mockup-5.jpg",
+      "../assets/img/portfolio/Deskbooking_Mockup-6.jpg",
+    ],
+  },
   drlex: {
     name: "Dr. Lex",
     date: "2022",
-    info: "Grafische Gestaltung und technische Umsetzung der Websites für das Ärztepaar Dr. Lex.",
+    info: "Design und technische Umsetzung der Websites für das Ärztepaar Dr. Lex.",
     technologies: "Adobe CC, Contao CMS",
     link: "https://doktorlex.at/",
     images: [
@@ -75,7 +90,7 @@ let projects = {
   movieapp: {
     name: "Movie App",
     date: "2024",
-    info: "Technische Umsetzung einer Movie-App mit React als Übungsprojekt. Die App bietet die Möglichkeit nach Filmen und Serien zu suchen, diese als Favoriten zu speichern und zu bewerten. Deployment der Web-App via Netlify.",
+    info: "Design und technische Umsetzung einer Movie-App mit React als Übungsprojekt. Die App bietet die Möglichkeit nach Filmen und Serien zu suchen, diese als Favoriten zu speichern und zu bewerten. Deployment der Web-App via Netlify.",
     technologies: "React, Tailwind CSS, TypeScript",
     link: "https://christinas-movieapp.netlify.app/", 
     images: [
