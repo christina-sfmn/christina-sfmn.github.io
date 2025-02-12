@@ -71,12 +71,8 @@
 
 /* ----- GENERAL STYLES ----- */
 
-html {
-  @apply overflow-x-hidden;
-}
-
 body {
-  @apply font-Raleway tracking-wide;
+  @apply font-Raleway tracking-wide overflow-x-hidden;
 }
 
 h1 {

@@ -907,6 +907,10 @@ video {
   overflow: auto;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1167,11 +1171,8 @@ video {
 
 /* ----- GENERAL STYLES ----- */
 
-html {
-  overflow-x: hidden;
-}
-
 body {
+  overflow-x: hidden;
   font-family: Raleway;
   letter-spacing: 0.025em;
 }
@@ -1897,10 +1898,6 @@ time {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1924,10 +1921,6 @@ time {
 @media (min-width: 1440px) {
   .xl\:w-1\/2 {
     width: 50%;
-  }
-
-  .xl\:grid-cols-7 {
-    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-6 {
